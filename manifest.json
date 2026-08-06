@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "아카이브잇",
+  "version": "1.0.0",
+  "description": "정상적으로 열람 가능한 족보 게시글을 개인 학습용 PDF로 저장하는 비공식 확장 프로그램입니다.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "아카이브잇",
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "content_scripts": [{
+    "matches": ["https://ewhaian.com/campus/lineage/detail/*", "https://*.ewhaian.com/campus/lineage/detail/*"],
+    "js": ["content/selectors.js", "content/extractor.js", "content/content.js"],
+    "run_at": "document_idle"
+  }]
+}
