@@ -2,7 +2,7 @@ if (!globalThis.__archiveItListenerInstalled) {
   globalThis.__archiveItListenerInstalled = true;
 
   function safeFilename(value) {
-    return (value || '족보')
+    return (value || '게시글')
       .replace(/[<>:"/\\|?*\u0000-\u001f]/g, '_')
       .replace(/\s+/g, ' ')
       .replace(/[. ]+$/g, '')

@@ -20,7 +20,7 @@ function registerSuccessfulConversion() {
 async function currentTab() {
   const [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
   if (!tab?.id || !/^https:\/\/(?:[^/]+\.)?ewhaian\.com\/campus\/lineage\/detail\//i.test(tab.url || '')) {
-    throw new Error('족보 게시글에서 실행해 주세요.');
+    throw new Error('지원되는 게시글에서 실행해 주세요.');
   }
   return tab;
 }

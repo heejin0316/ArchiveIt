@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "아카이브잇",
   "version": "1.0.0",
-  "description": "정상적으로 열람 가능한 족보 게시글을 개인 학습용 PDF로 저장하는 비공식 확장 프로그램입니다.",
+  "description": "정상적으로 열람 가능한 게시글을 개인 학습용 PDF로 저장하는 비공식 확장 프로그램입니다.",
   "permissions": ["activeTab", "scripting"],
   "action": {
     "default_title": "아카이브잇",

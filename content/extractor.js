@@ -37,7 +37,7 @@
     for (const selector of S.title) for (const el of document.querySelectorAll(selector)) {
       const value=clean(el.innerText); if (visible(el) && value.length>=2 && value.length<=200) return value;
     }
-    return clean(document.title.replace(/\s*[-|]\s*이화이언.*$/i,'')) || '이화이언 족보';
+    return clean(document.title.replace(/\s*[-|]\s*이화이언.*$/i,'')) || '게시글';
   }
   function imageCandidates(root) {
     const found = new Map();
